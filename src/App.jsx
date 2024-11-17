@@ -1,26 +1,32 @@
  import React from 'react'
+import Home from './Componets/Home/Home'
 import NavBar_One from './Componets/Navbar_One/NavBar_One'
 import NavBar_Two from './Componets/NavBar_Two/NavBar_Two'
-import Slaid_Bar from './Componets/slaid_Bar/Slaid_Bar'
-import Recommended from './Componets/Recommended_Movies/Recommended'
-import Benner from './Componets/Benner/Benner'
-import Live_Bar from './Componets/Live_Bar/Live_Bar'
-import Premiere from './Componets/Premiere/Premiere'
+import { Route, Routes } from 'react-router-dom'
  
+import Movies from './Componets/One_individualCard/Movies'
+import OneMovieCard from './Componets/One_individualCard/OneMovieCard'
+import Footer from './Componets/Footer/Footer'
  
-  
  const App = () => {
    return (
      <>
-      <NavBar_One/>
-      <NavBar_Two/>
-      <Slaid_Bar/>
-      <Recommended/>
-      <Benner/>
-      <Live_Bar/>
-      <Premiere/>
-    
+     <NavBar_One/>
+     <NavBar_Two/>
+      
+     <Routes>
+      <Route path="/"  element={<Home/>}/>
+      <Route path="/home"  element={<Home/>}/>
+      <Route path="/Movies_Jabalpur"  element={<Movies/>}/>
+      <Route path="/Movies_Jabalpur/:id"  element={<OneMovieCard/>}/>
+     
 
+
+      
+     </Routes>
+     <Footer/>
+      
+     
      </>
    )
  }

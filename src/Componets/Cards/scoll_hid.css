@@ -1,0 +1,4 @@
+.scoll_hid::-webkit-scrollbar{
+    display: none;
+    /* background-color: red; */
+ }

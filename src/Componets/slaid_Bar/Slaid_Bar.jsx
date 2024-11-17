@@ -43,7 +43,7 @@ const Slaid_Bar = () => {
             <div className="flex justify-evenly absolute top-32 px-4 gap-[92vw]">
                 <GiFastBackwardButton
                     onClick={goToPrevious}
-                    className="text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10 "
+                    className="text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10  "
                 />
                 <GiFastForwardButton
                     onClick={goToNext}

@@ -8,11 +8,11 @@ const Live_Bar = () => {
     <div className="">
 
     <h1 className="m-4 ml-36 text-2xl font-bold text-[#333333]">The Best Of Live Events</h1>
-    <div className="flex ml-32 gap-8 ">
+    <div className="flex ml-36 gap-8 ">
 
     {
         Live_Event_Data.map((val)=>(
-            <img src={val.img} alt="" className="rounded-xl w-56 h-56" />
+            <img src={val.img} alt="" className="rounded-lg w-56 h-56" />
         ))
     }
     </div>
