@@ -8,10 +8,10 @@ import { GoGift } from "react-icons/go";
 const Toggle_bar = ({toggle ,SetToggle}) => {
   return (
     <>
-      <div className='bg-[#55555591] h-full w-full rounded fixed z-10 mt-[-9vh]'
+      <div className='bg-[#55555591] h-full w-full rounded fixed z-10 md:mt-[-9vh] mt-[-30vh]'
         style={{opacity:toggle?1:0,visibility:toggle?"visible":"hidden"}}
         onClick={()=>SetToggle(false)}>
-                <div className='w-[400px] h-full bg-white fixed right-0 '>
+                <div className=' w-[300px] md:w-[400px] h-full bg-white fixed right-0 '>
                     <h2 className='text-xl text-[#404040] font-bold p-4'>Hey!</h2>
                     <p className='bg-gray-500 h-[1px] mt-3'></p>
 

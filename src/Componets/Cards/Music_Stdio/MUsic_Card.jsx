@@ -44,7 +44,7 @@ const Music_Data = [
 ];
 
 function clickHandler(id) {
-    navigate(`/movies/${id}`);
+    navigate(`/Movies_Jabalpur/${id}`);
 }
 
 
@@ -53,7 +53,7 @@ const MUsic_Card = () => {
     return (
         <div className=' max-w-[1300px] mx-auto mt-[-15px]'>
             <h1 className='mb-2 mt-14 ml-2  text-3xl font-bold text-[#333333]'>Your Music Stdio</h1>
-            <div className='flex gap-8 overflow-auto mt-10 scoll_hid'>
+            <div className='flex gap-8 overflow-auto mt-10 scoll_hid md:px-0 px-4'>
                 {
                      Music_Data.map((val, id) => {
                         return (

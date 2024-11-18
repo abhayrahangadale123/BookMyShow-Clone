@@ -41,23 +41,24 @@ const Premiere = () => {
       <div className="bg-[#2B3149]">
 
 
-        <div className="mt-14 m-auto ml-36 overflow-x-hidden">
-          <img src={Prem_btn} alt="" className="" />
+        <div className="mt-14 m-auto  ml-2 md:ml-36  overflow-x-hidden">
+          <img src={Prem_btn} alt="" className="px-4 md:px-0 " />
 
         </div>
-        <div className="mt-8">
-          <h1 className="font-sans ml-36 text-2xl font-bold text-white">Premieres</h1>
-          <p className='font-sans ml-36 text-white'>Brand new relesses every Friday</p>
-          <div className="flex justify-center gap-8">
+        <div className="md:mt-8 mt-3">
+          <h1 className=" px-4 md:px-0  font-sans ml-2 md:ml-36 text-2xl font-bold text-white">Premieres</h1>
+          <p className='  px-4 md:px-0 font-sans  ml-2 md:ml-36 text-white'>Brand new relesses every Friday</p>
+          {/* <div className="flex justify-center gap-8   overflow-scroll md:overflow-hidden"> */}
+            <div className="flex   gap-8 overflow-scroll px-4 md:px-0 md:ml-36 md:overflow-hidden">
             {
               Premiere_Data.map((val) => (
                 <>
                   <div className="">
 
-                    <img src={val.movie_img} alt="" className='w-56 h-80  rounded-xl relative ' />
+                    <img src={val.movie_img} alt="" className=' w-56 h-80  rounded-xl relative ' />
                     <div className="mt-1">
 
-                      <h1 className='text-white font-sans font-semibold text-xl'>{val.movie_name}</h1>
+                      <h1 className='text-white font-sans font-semibold text-sm md:text-xl w-56'>{val.movie_name}</h1>
                       <h1 className='text-white font-sans font-semibold text-xl'>{val.movies_prev}</h1>
                       
                       <p className='text-white'>{val.movie_lang}</p>

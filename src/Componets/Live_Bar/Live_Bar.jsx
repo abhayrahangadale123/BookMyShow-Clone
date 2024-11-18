@@ -7,8 +7,8 @@ const Live_Bar = () => {
     <>
     <div className="">
 
-    <h1 className="m-4 ml-36 text-2xl font-bold text-[#333333]">The Best Of Live Events</h1>
-    <div className="flex ml-36 gap-8 ">
+    <h1 className="m-4   text-xl font-bold text-[#333333] md:ml-40 md:text-2xl">The Best Of Live Events</h1>
+    <div className="flex   gap-8 overflow-scroll px-4 md:px-0 md:ml-36 md:overflow-hidden">
 
     {
         Live_Event_Data.map((val)=>(

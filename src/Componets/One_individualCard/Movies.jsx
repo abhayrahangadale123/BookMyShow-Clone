@@ -10,7 +10,7 @@ const Movies = () => {
     const { Recommended_Movies_Data } = useContext(Context)
     let navigate = useNavigate();
     function clickHandler(id) {
-        navigate(`/Movies_Jabalpur/:${id}`);
+        navigate(`/Movies_Jabalpur/${id}`);
     }
     return (
         <>
@@ -89,7 +89,7 @@ const Movies = () => {
                             <h1 className='text-xl font-semibold mt-2'>Comming soon</h1>
                             <h5 className='mt-2 text-[#DE354B] cursor-pointer'>Explor Upcoming Movies </h5>
                         </div>
-                        <div className="flex justify-center gap-8 flex-wrap ">
+                        <div className="flex justify-center gap-8 flex-wrap cursor-pointer ">
                             {
                                 Recommended_Movies_Data.map((val ,id) => (
                                     <>

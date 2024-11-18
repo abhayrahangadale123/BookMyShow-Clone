@@ -140,7 +140,12 @@ const Footer = () => {
 
 
 
-                    <p className='flex justify-center mt-10 '><span className='text-[#888]'>______________________________________________________________________________________________</span> <img className='w-40 mx-4 cursor-pointer' src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="" /><span className='text-[#888]'>________________________________________________________________________________________________</span></p>
+ 
+                    <p className="flex items-center justify-center mt-10">
+                         <span className="flex-grow h-[1px] bg-gray-400"> </span>  
+                        <img className="w-32 mx-4 cursor-pointer" src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="BookMyShow Logo" />
+                        <span className="flex-grow h-[1px] bg-gray-400"></span>
+                    </p>
 
 
                     <div className='flex gap-3 items-center justify-center my-10'>

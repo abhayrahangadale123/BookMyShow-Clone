@@ -35,19 +35,19 @@ const Slaid_Bar = () => {
     return (
         <div className="relative overflow-x-hidden">
             {/* Image slider */}
-            <div className="flex justify-center bg-[#F5F5F5] py-2 gap-2 border rounded shadow-md overflow-hidden">
-                <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="border h-80  rounded-md w-full" />
+            <div className="flex justify-center bg-[#F5F5F5] py-2 gap-2 md:border md:rounded md:shadow-md overflow-hidden">
+                <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="border h-44 md:h-80  rounded-md w-full" />
             </div>
 
             {/* Navigation controls */}
             <div className="flex justify-evenly absolute top-32 px-4 gap-[92vw]">
                 <GiFastBackwardButton
                     onClick={goToPrevious}
-                    className="text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10  "
+                    className=" hidden md:block text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10  "
                 />
                 <GiFastForwardButton
                     onClick={goToNext}
-                    className="text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10 "
+                    className="hidden md:block text-3xl  rounded cursor-pointer text-white bg-[#F5F5F5] w-10 "
                 />
             </div>
         </div>

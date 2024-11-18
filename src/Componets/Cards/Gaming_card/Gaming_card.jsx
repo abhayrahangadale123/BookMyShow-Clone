@@ -65,7 +65,7 @@ const   Gaming_card = () => {
     return (
         <div className=' max-w-[1300px] mx-auto mt-[-15px]'>
             <h1 className='mb-2 mt-14 ml-2  text-3xl font-bold text-[#333333] '>Top Games & Sport Events</h1>
-            <div className='flex gap-8 overflow-auto mt-10 scoll_hid'>
+            <div className='flex gap-8 overflow-auto mt-10 scoll_hid md:px-0 px-4'>
                 {
                        Gaming_Data.map((val, id) => {
                         return (

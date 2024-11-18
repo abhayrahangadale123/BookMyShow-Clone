@@ -60,7 +60,7 @@ const  OuterDoor = () => {
     return (
         <div className=' max-w-[1300px] mx-auto mt-[-15px]'>
             <h1 className='mb-2 mt-14 ml-2  text-3xl font-bold text-[#333333] '>Outdoor Event</h1>
-            <div className='flex gap-8 overflow-auto mt-10 scoll_hid'>
+            <div className='flex gap-8 overflow-auto mt-10 scoll_hid md:px-0 px-4'>
                 {
                       Outddoor_event.map((val, id) => {
                         return (
