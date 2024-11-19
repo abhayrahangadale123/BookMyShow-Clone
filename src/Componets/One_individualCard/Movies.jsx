@@ -15,12 +15,12 @@ const Movies = () => {
     return (
         <>
             <Slaid_Bar />
-            <div className="flex flex-col gap-5 bg-[#F5F5F5] overflow-x-hidden">
+            <div className="  flex flex-col  gap-5 bg-[#F5F5F5] overflow-x-hidden">
 
 
                 <div className="flex justify-center align-middle gap-8  ">
 
-                    <div className="w-1/3 ">
+                    <div className="w-1/3  hidden  md:flex">
                         <div className="mx-auto ml-28  ">
 
                             <h1 className='mb-2 mt-14 ml-2  text-2xl font-bold text-[#333333] '> Filter</h1>
@@ -85,17 +85,17 @@ const Movies = () => {
 
                         <h1 className=' m-4 ml-10 text-2xl font-bold text-[#333333]  '>  Movies in Jablpur </h1>
                         <button className=' m-4 p-2 ml-10 text-sm text-[#f9f6f6] border w-14 bg-[#DE354B]   rounded-full'>Hindi</button>
-                        <div className="m-4 p-6 ml-10 flex justify-between shadow-2xl align-middle mt-auto ">
-                            <h1 className='text-xl font-semibold mt-2'>Comming soon</h1>
-                            <h5 className='mt-2 text-[#DE354B] cursor-pointer'>Explor Upcoming Movies </h5>
+                        <div className="  w-full  px-4 md:m-4  md:p-4 md:ml-10 flex justify-between shadow-2xl align-middle mt-auto ">
+                            <h1 className=' w-full text-sm md:text-xl font-semibold mt-2'>Comming soon</h1>
+                            <h5 className='w-full mt-2 ml-8 md:ml-0 md:w-[20vw] text-[#DE354B] cursor-pointer'>Explor Upcoming Movies </h5>
                         </div>
-                        <div className="flex justify-center gap-8 flex-wrap cursor-pointer ">
+                        <div className=" grid grid-cols-2 p-2 md:flex md:flex-wrap   gap-8   cursor-pointer mt-4 ">
                             {
                                 Recommended_Movies_Data.map((val ,id) => (
                                     <>
                                         <div onClick={() => clickHandler(id)} className="key={index} ">
 
-                                            <img src={val.movie_img} alt="" className='w-56 h-96 border rounded-xl relative ' />
+                                            <img src={val.movie_img} alt="" className='h-64 md:w-56 md:h-96 border rounded-xl relative ' />
                                             <div className="mt-1">
 
                                                 <h1 className=' font-semibold text-xl'>{val.movie_name}</h1>
@@ -113,10 +113,10 @@ const Movies = () => {
 
                 </div>
 
-                <div className="shadow-2xl bg-white p-3 w-full">
+                <div className=" hidden  md:block shadow-2xl bg-white p-3  w-full">
                     <h1 className='mx-32 text-[#767575] text-sm'>Home - Movies</h1>
                 </div>
-                <div className="">
+                <div className=" hidden md:block">
                     <div class="container  px-3 mx-32">
                         <h2 class="text-sm font-semibold mb-1 text-[#717171]">
                             Enjoy Online Ticket Booking for Movies in Jabalpur With BookMyShow

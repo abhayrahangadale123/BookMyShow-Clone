@@ -60,7 +60,7 @@ const Recommended = () => {
       </h1>
 
       {/* Movies Container */}
-      <div className="flex gap-4 overflow-x-scroll px-4 md:overflow-hidden md:justify-center">
+      <div className="flex gap-4 overflow-x-scroll px-4 md:overflow-hidden md:justify-center  ">
         {Recommended_Movies_Data.map((movie, id) => (
           <div
             key={id}
@@ -71,7 +71,7 @@ const Recommended = () => {
             <img
               src={movie.movie_img}
               alt={`Poster of ${movie.movie_name}`}
-              className="w-36 h-48 border rounded-lg md:w-56 md:h-96"
+              className="w-36 h-48 border rounded-lg md:w-56 md:h-96 object-cover"
             />
 
             {/* Movie Details */}
