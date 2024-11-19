@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import slaid_one from "../../assets/slaid_one.avif"
 import slaid_Two from "../../assets/slaid_Two.avif"
-import slaid_Three from "../../assets/slaid_Three.avif"
+// import slaid_Three from "../../assets/slaid_Three.avif"
 import slaid_four from "../../assets/slaid_four.jpg"
 import slaid_five from "../../assets/slaid_five.avif"
 import { GiFastBackwardButton } from "react-icons/gi";
@@ -10,7 +10,7 @@ import { GiFastForwardButton } from "react-icons/gi";
  
 
 const Slaid_Bar = () => {
-    const images = [slaid_one, slaid_Two, slaid_Three,slaid_four,slaid_five];
+    const images = [slaid_one, slaid_Two,slaid_four,slaid_five];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     // Automatic transition every 3 seconds
